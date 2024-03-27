@@ -534,8 +534,8 @@ require('lazy').setup {
       local servers = {
         -- clangd = {},
         gopls = {},
-        -- pyright = {},
-        -- rust_analyzer = {},
+        pyright = {},
+        intelephense = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -543,6 +543,7 @@ require('lazy').setup {
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
         tsserver = {},
+        templ = {},
         --
 
         lua_ls = {
@@ -653,7 +654,7 @@ require('lazy').setup {
       --    you can use this plugin to help you. It even has snippets
       --    for various frameworks/libraries/etc. but you will have to
       --    set up the ones that are useful for you.
-      'rafamadriz/friendly-snippets',
+      -- 'rafamadriz/friendly-snippets',
     },
     config = function()
       -- See `:help cmp`
